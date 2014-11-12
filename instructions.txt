@@ -1,0 +1,60 @@
+To show the naver button
+
+Shortcode
+[naverlogin]  
+or direct php function call
+
+if(function_exists('new_naver_sign_button')){
+	echo new_naver_sign_button();
+}
+
+
+To show link or unlink button for any logged in user
+
+Shortcode:
+[naverlinkunlink]
+
+or direct function call
+
+if(function_exists('new_naver_is_user_connected')){
+
+	//new_add_naver_connect_field();
+	$output = '';
+	if (new_naver_is_user_connected()) {
+		$output .= ''.__('Naver is connected, click to disconnect', 'naver-connect').'';
+		$output .= ''.new_naver_unlink_button().'';
+	} else {
+		$output .= ''.__('Naver is not connected, click to connect', 'naver-connect').'';
+		$output .= ''.new_naver_link_button().'';
+	}
+
+	return $output;
+
+}
+
+If from wordpress setting avatar showing is enabled then it will pick the user's profile picture from naver 
+Compatible with buddypress and bbpress forum
+
+there is widget to show in sidebar 
+
+A typical or minimalistic setting page http://prntscr.com/53je57
+
+
+How to get app id and app secret:
+
+Any kind of naver login related resource is available from this page http://developer.naver.com/wiki/pages/OpenAPI
+
+For naver login specific documenation is here http://developer.naver.com/wiki/pages/NaverLogin
+
+At first register your app from here  http://developer.naver.com/openapi/register.nhn
+
+After registration the most important part is to set the siteurl and callback url
+
+Site url should be http://yoursite.com  (as where you are using the plugin)
+Callback url pattern will be bellow
+
+http://yoursite.com/wp-login?loginNaver=1
+
+Just add /wp-login?loginNaver=1  after your site url (This need to done perfectly otherwise  the callback will not be validated)
+http://prntscr.com/53jgwn  see screenshot
+
