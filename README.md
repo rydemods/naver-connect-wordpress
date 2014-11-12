@@ -1,4 +1,4 @@
-naver-connect    Wordpress Naver connect  Socail login.
+naver-connect    Wordpress Naver Login
 =============
 
 How to get app id and app secret:
