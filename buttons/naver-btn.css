@@ -1,0 +1,13 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600);
+
+.naver-login{
+  margin: 5px auto;
+  display: inline-block;
+  background: url('naver-btn.png?v=1') no-repeat 0 0;
+  max-width: 162px;
+  max-height: 35px;
+  width: 162px; height: 35px;
+  text-indent: -99999px;
+
+}
+
