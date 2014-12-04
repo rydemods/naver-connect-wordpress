@@ -9,7 +9,7 @@ Author: Seoulwebdesign
 License: GPL2
 */
 
-/*  Copyright 2012  Roland Soos - cbx  (email : roland@cbxweb.com)
+/* 
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
